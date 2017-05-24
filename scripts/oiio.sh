@@ -18,7 +18,7 @@ echo -e "\e[0;37m"
 
 if [ ! -d oiio ]; then
 	echo -e "\e[1;32m-------> CLONING oiio\e[0;37m"
-	git clone git@github.com:OpenImageIO/oiio.git || abort
+	git clone https://github.com/OpenImageIO/oiio || abort
 else
 	echo -e "\e[1;32m-------> PULLING oiio\e[0;37m"
 	pushd oiio

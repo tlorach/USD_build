@@ -18,7 +18,7 @@ echo -e "\e[0;37m"
 
 if [ ! -d USD ]; then
 	echo -e "\e[1;32m-------> CLONING USD\e[0;37m"
-	git clone git@github.com:PixarAnimationStudios/USD.git || abort
+	git clone https://github.com/PixarAnimationStudios/USD || abort
 else
 	echo -e "\e[1;32m-------> PULLING USD\e[0;37m"
 	pushd USD
@@ -30,7 +30,7 @@ if [ ! -d USD/cmake_build ]; then
   mkdir USD/cmake_build
 fi
 pushd USD/cmake_build
-cmake -D BOOST_ROOT:path=`pwd`/../../boost_1_62_0 .. || abort
+cmake -D BOOST_ROOT:path=`pwd`/../../boost_1_62_0 -D TBB_ROOT_DIR:path=`pwd`/../../tbb2017_20170412oss .. || abort
 echo -e "\e[1;32m-------> install"
 echo -e "\e[0;37m"
 sudo make install || abort

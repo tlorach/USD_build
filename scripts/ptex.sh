@@ -18,7 +18,7 @@ echo -e "\e[0;37m"
 
 if [ ! -d ptex ]; then
 	echo -e "\e[1;32m-------> CLONING ptex\e[0;37m"
-	git clone git@github.com:wdas/ptex.git || abort
+	git clone https://github.com/wdas/ptex || abort
 else
 	echo -e "\e[1;32m-------> PULLING ptex\e[0;37m"
 	pushd ptex

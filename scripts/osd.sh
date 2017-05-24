@@ -18,7 +18,7 @@ echo -e "\e[0;37m"
 
 if [ ! -d OpenSubdiv ]; then
 	echo -e "\e[1;32m-------> CLONING OpenSubdiv\e[0;37m"
-	git clone git@github.com:PixarAnimationStudios/OpenSubdiv.git || abort
+	git clone https://github.com/PixarAnimationStudios/OpenSubdiv || abort
 else
 	echo -e "\e[1;32m-------> PULLING OpenSubdiv\e[0;37m"
 	pushd OpenSubdiv

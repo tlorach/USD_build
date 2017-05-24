@@ -17,7 +17,7 @@ echo -e "\e[1;32m-----------------------------------"
 echo -e "\e[0;37m"
 if [ ! -d double-conversion ]; then
 	echo -e "\e[1;32m-------> CLONING double conversion\e[0;37m"
-	git clone git@github.com:google/double-conversion.git || abort
+	git clone https://github.com/google/double-conversion || abort
 else
 	echo -e "\e[1;32m-------> PULLING double conversion\e[0;37m"
 	pushd double-conversion

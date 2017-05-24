@@ -41,7 +41,9 @@ Then:
 
 ### Threading Building Blocks
 At https://www.threadingbuildingblocks.org/
-Just keep it where you downloaded it: it already contains the binaries... and not need to bother with installing it (it turned out to be a problem for me). Then later you just need to set `TBB_LOCATION` to its path, in cmake
+Just keep it where you downloaded it: it already contains the binaries... and not need to bother with installing it (it turned out to be a problem for me). Then later you just need to set
+* `TBB_ROOT_DIR` for *USD* cmake
+* `TBB_LOCATION` for *OpenSubdiv* cmake
 
 ### double conversion
 At https://github.com/google/double-conversion
